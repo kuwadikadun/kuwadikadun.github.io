@@ -137,6 +137,10 @@ input:checked[type="checkbox"].switches:before {
   border: 1px solid var(--primary-color);
 }
 
+input[type="checkbox"].switches:hover {
+  cursor: pointer;
+}
+
 #navbar .mode-switch span {
   display: block;
   padding: 0.5rem 0;
