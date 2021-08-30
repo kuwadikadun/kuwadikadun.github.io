@@ -1,0 +1,521 @@
+:root {
+  --secondary-color: #4a4a4a;
+  --primary-color: #f5f5f5;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+[data-theme="dark"] {
+  --secondary-color: #f5f5f5;
+  --primary-color: #4a4a4a;
+}
+
+.active {
+  opacity: 1 !important;
+}
+
+.light-mode {
+  background-color: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-extra-bold {
+  font-weight: 800;
+}
+
+.text-light-font {
+  font-weight: 300;
+}
+
+.text-light-modes {
+  opacity: 0.7;
+  color: var(--secondary-color) !important;
+}
+
+.text-light-modes:hover {
+  opacity: 1;
+}
+
+.back-light-text {
+  -webkit-text-stroke: var(--secondary-color) 2px;
+}
+
+.back-dark-text {
+  -webkit-text-stroke: var(--primary-color) 2px;
+}
+
+.page-link-info a {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.page-link-info a:hover {
+  opacity: 1;
+}
+
+.svg-light-mode {
+  fill: var(--secondary-color);
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.back-text {
+  position: relative;
+  color: transparent;
+  opacity: 0.15;
+  z-index: -1035;
+}
+
+.my-container {
+  width: 100% !important;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.shadow-bot-light {
+  box-shadow: 0px 2px 15px -10px var(--secondary-color);
+}
+
+.shadow-bot-dark {
+  box-shadow: 0px 2px 15px -10px var(--primary-color);
+}
+
+.shadow-top-light {
+  box-shadow: 0px -2px 15px -10px var(--secondary-color);
+}
+
+.shadow-top-dark {
+  box-shadow: 0px -2px 15px -10px var(--primary-color);
+}
+
+input[type="checkbox"].switches {
+  display: flex;
+  align-self: center;
+  position: relative;
+  width: 40px;
+  height: 20px;
+  appearance: unset;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+  outline: none;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+input[type="checkbox"].switches:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+  transform: scale(1.2);
+  transition: 0.4s;
+}
+
+input:checked[type="checkbox"].switches {
+  background-color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+input:checked[type="checkbox"].switches:before {
+  left: 20px;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+}
+
+#navbar .mode-switch span {
+  display: block;
+  padding: 0.5rem 0;
+}
+
+#navbar .mode-switch .moon {
+  width: 1.5rem;
+  fill: var(--secondary-color);
+}
+
+#navbar .mode-switch .sun {
+  width: 1.8rem;
+  display: none;
+}
+
+#header .img-person {
+  width: 280px;
+  height: 450px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#header .img-person-thumb {
+  width: 280px;
+  margin-top: 30px;
+  transition: all 0.5s;
+}
+
+#header .img-person-thumb:hover {
+  transform: scale(1.1);
+}
+
+#header .right-content .content-main {
+  transform: translate(6rem, 0);
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+#header .right-content .content-muncul {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+#header .right-content h3 {
+  font-size: 1.3rem;
+  color: #5e93eb;
+}
+
+#header .right-content p.content-muncul {
+  transform: translate(0, 0);
+  opacity: 0.7;
+}
+
+#header .right-content .page-link-info svg {
+  width: 2rem;
+}
+
+#header .info-text {
+  font-style: italic;
+  opacity: 0.5;
+}
+
+#header .right-content svg {
+  transform: translate(0, -4rem);
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+#header .right-content svg.muncul {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+#about-me h2 {
+  margin-top: 6rem;
+}
+
+#about-me .about-text {
+  text-indent: 30px;
+}
+
+#about-me .about-kiri,
+.about-kanan {
+  opacity: 0;
+  transition: 1s;
+  transform: translate(-5rem, 0);
+}
+
+#about-me .about-kanan {
+  transform: translate(5rem, 0);
+}
+
+#about-me .about-kiri.muncul {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+#about-me .about-kanan.muncul {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+#tool-skill .tool-icon {
+  transform: translate(-8rem, 0);
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+#tool-skill .tool-icon.tool-muncul {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+#contact .info-contact p {
+  font-size: 0.85rem;
+}
+
+#contact .info-contact a {
+  text-decoration: none;
+}
+
+footer {
+  right: 0;
+  left: 0;
+}
+
+footer p {
+  font-weight: 500;
+  margin-bottom: 0;
+  font-size: 0.85rem;
+}
+
+@media (min-width: 0) {
+  #header {
+    margin-top: 3rem;
+  }
+
+  #header .right-content h4 {
+    font-size: 1.4rem;
+  }
+
+  #header .right-content p {
+    font-size: 1rem !important;
+  }
+
+  #header .right-content .page-link-info {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  #about-me h2 {
+    font-size: 2rem;
+  }
+
+  #about-me .back-text {
+    font-size: 3rem;
+    margin-top: -16rem;
+  }
+
+  #tool-skill {
+    margin-top: 20rem;
+  }
+
+  #tool-skill h2 {
+    font-size: 2rem;
+  }
+
+  #tool-skill .back-text {
+    font-size: 3rem !important;
+    margin-top: 7.5rem !important;
+  }
+
+  #tool-skill svg {
+    width: 3rem;
+  }
+
+  #contact {
+    margin-top: -2rem;
+  }
+
+  #contact .back-text {
+    font-size: 3rem;
+    margin-top: 8rem;
+  }
+
+  #around-web {
+    margin-top: -2rem;
+  }
+
+  #around-web h2 {
+    font-size: 2rem;
+  }
+
+  footer {
+    margin-top: 13rem;
+  }
+}
+
+@media (min-width: 576px) {
+  #header .right-content h4 {
+    font-size: 1.5rem;
+  }
+
+  #header .right-content p {
+    font-size: 1rem !important;
+  }
+
+  #header .right-content .page-link-info {
+    text-align: start;
+  }
+
+  #about-me .back-text {
+    margin-top: -11rem;
+  }
+
+  #tool-skill {
+    margin-top: 16rem;
+  }
+
+  #tool-skill .back-text {
+    margin-top: 3rem !important;
+  }
+
+  #tool-skill svg {
+    width: 5rem;
+  }
+
+  #contact {
+    margin-top: 5rem;
+  }
+
+  #contact .back-text {
+    margin-top: 10rem;
+  }
+
+  #around-web {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .back-light-text {
+    -webkit-text-stroke: var(--secondary-color) 5px;
+  }
+
+  .back-dark-text {
+    -webkit-text-stroke: var(--primary-color) 5px;
+  }
+
+  .my-container {
+    width: 720px;
+  }
+
+  #header .right-content {
+    margin-top: 1.15rem !important;
+  }
+
+  #header .right-content h3 {
+    font-size: 1.4rem;
+    padding-top: 4rem;
+  }
+
+  #about-me h2 {
+    font-size: 3rem;
+  }
+
+  #about-me .back-text {
+    font-size: 5rem;
+    margin-top: -14rem;
+  }
+
+  #tool-skill {
+    margin-top: 16rem !important;
+  }
+
+  #tool-skill h2 {
+    font-size: 3rem;
+  }
+
+  #tool-skill .back-text {
+    font-size: 5rem !important;
+    margin-top: 0.5rem !important;
+  }
+
+  #tool-skill svg {
+    width: 7rem;
+  }
+
+  #contact {
+    margin-top: 7rem;
+  }
+
+  #contact h2 {
+    font-size: 3rem;
+  }
+
+  #contact .back-text {
+    font-size: 5rem;
+    margin-top: 18rem;
+  }
+
+  #around-web {
+    margin-top: -8rem;
+  }
+
+  #around-web h2 {
+    font-size: 3rem;
+  }
+
+  #around-web .web-img svg {
+    width: 5rem;
+  }
+
+  footer {
+    margin-top: 15rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .my-container {
+    width: 960px !important;
+  }
+
+  #header {
+    margin-top: 7rem;
+  }
+
+  #header .right-content {
+    margin-top: 3rem !important;
+  }
+
+  #header .right-content h3 {
+    padding-top: 4rem;
+    font-size: 1.4rem;
+  }
+
+  #header .info-text {
+    margin-top: 5rem !important;
+  }
+
+  #about-me .back-text {
+    font-size: 6rem;
+    margin-left: -4rem;
+    margin-top: -5rem;
+  }
+
+  #tool-skill {
+    margin-top: 10rem !important;
+  }
+
+  #tool-skill .back-text {
+    font-size: 6rem !important;
+    margin-left: -4rem !important;
+    margin-top: 5rem !important;
+  }
+
+  #contact {
+    margin-top: 4rem !important;
+  }
+
+  #contact .back-text {
+    font-size: 6rem;
+    margin-left: -4rem;
+    margin-top: 25rem;
+  }
+
+  #around-web {
+    margin-top: -18rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .my-container {
+    width: 1250px !important;
+  }
+
+  #tool-skill .back-text {
+    font-size: 6rem !important;
+    margin-top: 4rem !important;
+  }
+}
