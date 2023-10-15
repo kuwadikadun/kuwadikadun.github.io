@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Icon -->
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.css" />
+
+    <!-- My Bootstrap -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <title>Project - Kuwadi Kadun</title>
+  </head>
+  <body class="light-mode" style="height: 100%">
+    <!-- Navbar -->
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg navbar-light light-mode fixed-top"
+    >
+      <div class="my-container d-flex justify-content-between">
+        <a class="navbar-brand text-bold light-mode" href="../index.html"
+          >Kuwadi Kadun</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a
+              href="../index.html"
+              class="about-me nav-link scrolling text-light-modes"
+              >Back</a
+            >
+            <!-- <a class="about-me nav-link scrolling text-light-modes" href="src/project.html">Project</a>
+            <a class="about-me nav-link scrolling text-light-modes" href="../index.html">About Me</a>
+            <a class="contact nav-link scrolling text-light-modes" href="#contact">Contact</a> -->
+            <div class="mode-switch d-flex justify-content-center pl-3">
+              <input
+                id="modes"
+                class="switches"
+                type="checkbox"
+                name="checkbox"
+              />
+              <span class="pl-2">
+                <svg class="moon" viewBox="0 0 312.812 312.812">
+                  <g>
+                    <g>
+                      <path
+                        d="M305.2,178.159c-3.2-0.8-6.4,0-9.2,2c-10.4,8.8-22.4,16-35.6,20.8c-12.4,4.8-26,7.2-40.4,7.2c-32.4,0-62-13.2-83.2-34.4    c-21.2-21.2-34.4-50.8-34.4-83.2c0-13.6,2.4-26.8,6.4-38.8c4.4-12.8,10.8-24.4,19.2-34.4c3.6-4.4,2.8-10.8-1.6-14.4    c-2.8-2-6-2.8-9.2-2c-34,9.2-63.6,29.6-84.8,56.8c-20.4,26.8-32.4,60-32.4,96c0,43.6,17.6,83.2,46.4,112s68,46.4,112,46.4    c36.8,0,70.8-12.8,98-34c27.6-21.6,47.6-52.4,56-87.6C314,184.959,310.8,179.359,305.2,178.159z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+                <svg class="sun" viewBox="0 0 513.012 513.012">
+                  <g>
+                    <g>
+                      <circle
+                        cx="256.506"
+                        cy="256.506"
+                        fill="#f5d573"
+                        r="149.158"
+                      />
+                    </g>
+                    <g>
+                      <path
+                        d="m405.666 256.506c0 82.38-66.78 149.16-149.16 149.16-36.46 0-69.87-13.09-95.78-34.82 19.94 9.89 42.41 15.45 66.18 15.45 82.38 0 149.16-66.78 149.16-149.16 0-45.9-20.73-86.96-53.35-114.32 49.16 24.39 82.95 75.09 82.95 133.69z"
+                        fill="#f7c22c"
+                      />
+                    </g>
+                    <g fill="#ff9100">
+                      <path
+                        d="m256.506 57.593c4.143 0 7.5-3.358 7.5-7.5v-42.593c0-4.142-3.357-7.5-7.5-7.5-4.142 0-7.5 3.358-7.5 7.5v42.593c0 4.142 3.358 7.5 7.5 7.5z"
+                      />
+                      <path
+                        d="m256.506 455.418c-4.142 0-7.5 3.358-7.5 7.5v42.593c0 4.142 3.358 7.5 7.5 7.5 4.143 0 7.5-3.358 7.5-7.5v-42.593c0-4.142-3.358-7.5-7.5-7.5z"
+                      />
+                      <path
+                        d="m146.804 81.497c1.389 2.406 3.91 3.751 6.502 3.751 1.272 0 2.562-.324 3.743-1.006 3.587-2.071 4.816-6.658 2.745-10.245l-21.296-36.886c-2.071-3.587-6.658-4.816-10.245-2.745s-4.816 6.658-2.745 10.245z"
+                      />
+                      <path
+                        d="m366.207 431.515c-2.072-3.588-6.66-4.815-10.245-2.745-3.587 2.071-4.816 6.658-2.745 10.245l21.297 36.886c1.39 2.406 3.91 3.751 6.502 3.751 1.272 0 2.563-.324 3.743-1.006 3.587-2.071 4.816-6.658 2.745-10.245z"
+                      />
+                      <path
+                        d="m81.497 146.804-36.886-21.296c-3.587-2.072-8.174-.842-10.245 2.745s-.842 8.174 2.745 10.245l36.886 21.296c1.181.682 2.471 1.006 3.743 1.006 2.592 0 5.113-1.346 6.502-3.751 2.071-3.587.842-8.174-2.745-10.245z"
+                      />
+                      <path
+                        d="m475.901 374.514-36.887-21.296c-3.589-2.072-8.176-.842-10.245 2.745-2.071 3.587-.842 8.174 2.745 10.245l36.887 21.296c1.182.682 2.471 1.006 3.743 1.006 2.592 0 5.113-1.346 6.502-3.751 2.072-3.588.842-8.175-2.745-10.245z"
+                      />
+                      <path
+                        d="m57.593 256.506c0-4.142-3.358-7.5-7.5-7.5h-42.593c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h42.593c4.142 0 7.5-3.358 7.5-7.5z"
+                      />
+                      <path
+                        d="m505.512 249.006h-42.593c-4.143 0-7.5 3.358-7.5 7.5s3.357 7.5 7.5 7.5h42.593c4.143 0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5z"
+                      />
+                      <path
+                        d="m73.997 353.217-36.886 21.296c-3.587 2.071-4.816 6.658-2.745 10.245 1.389 2.406 3.91 3.751 6.502 3.751 1.272 0 2.562-.324 3.743-1.006l36.886-21.296c3.587-2.071 4.816-6.658 2.745-10.245-2.072-3.587-6.659-4.816-10.245-2.745z"
+                      />
+                      <path
+                        d="m435.271 160.801c1.272 0 2.563-.324 3.743-1.006l36.887-21.296c3.587-2.071 4.816-6.658 2.745-10.245-2.07-3.587-6.659-4.817-10.245-2.745l-36.887 21.296c-3.587 2.071-4.816 6.658-2.745 10.245 1.389 2.406 3.911 3.751 6.502 3.751z"
+                      />
+                      <path
+                        d="m157.049 428.77c-3.587-2.072-8.174-.842-10.245 2.745l-21.296 36.886c-2.071 3.587-.842 8.174 2.745 10.245 1.181.682 2.471 1.006 3.743 1.006 2.592 0 5.113-1.346 6.502-3.751l21.296-36.886c2.072-3.588.843-8.175-2.745-10.245z"
+                      />
+                      <path
+                        d="m355.962 84.242c1.181.682 2.471 1.006 3.743 1.006 2.592 0 5.113-1.345 6.502-3.751l21.297-36.886c2.071-3.587.842-8.174-2.745-10.245-3.586-2.072-8.175-.843-10.245 2.745l-21.297 36.886c-2.071 3.587-.842 8.174 2.745 10.245z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End of Navbar -->
+
+    <!-- Container -->
+    <div class="container-project">
+      <!-- Main Content -->
+      <div id="header">
+        <div class="row" style="gap: 20px">
+          <div class="a-box">
+            <a href="../src/project/library.html">
+              <div class="box-rekrut">
+                <h3>Library</h3>
+                <p class="truncate">
+                  Library merupakan sebuah website yang saya buat ketika belajar
+                  mengenai pembuatan Rest API menggunakan framework Laravel.
+                  Website ini juga saya buat sekaligus untuk pembelajaran
+                  mengenai cara mengonsumsi API.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="a-box">
+            <a href="../src/project/day-movie.html">
+              <div class="box-rekrut">
+                <h3>Movie List</h3>
+                <p class="truncate">
+                  Day Movie merupakan sebuah website ReactJS pertama yang saya
+                  buat untuk belajar melakukan fetching API. Website ini
+                  mengambil data secara langsung dari website TMDb API.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="a-box">
+            <a href="../src/project/rekrutment.html">
+              <div class="box-rekrut">
+                <h3>SPK-Rekrutmen</h3>
+                <p class="truncate">
+                  SPK-Rekrutmen merupakan sebuah aplikasi yang dibangun untuk
+                  membantu sebuah instansi dalam melakukan rekrutmen pegawai.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="a-box">
+            <a href="../src/project/money-tracker.html">
+              <div class="box-rekrut">
+                <h3>Money Tracker</h3>
+                <p class="truncate">
+                  Money Tracker merupakan sebuah website statis yang dibuat
+                  untuk menyimpan jejak keluar-masuk uang. Website ini dibuat
+                  seperti halnya jurnal keuangan.
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- <div class="card" style="width: 18rem">
+            <img class="card-img-top" src="" alt="Card image cap" />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <!-- End of Main Content -->
+    </div>
+    <!-- End of Container -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="../assets/js/bootstrap.bundle.js"></script>
+
+    <!-- My Javascript -->
+    <script src="../assets/js/script.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
